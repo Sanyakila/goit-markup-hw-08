@@ -1,0 +1,62 @@
+/* GENERAL STYLES */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.link {
+    text-decoration: none;
+}
+.link:hover {
+    color:#2196F3;
+}
+.list {
+    list-style: none;
+}
+.logo-link {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: calc(31\26);
+        letter-spacing: 0.03em;
+        color: #2196F3;
+}
+.logo-header {
+    color: #000000
+}
+.header-nav-link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: calc(16/14);
+        letter-spacing: 0.02em;
+        color: #212121;
+}
+.header-tel-link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: calc(16/14);
+        letter-spacing: 0.02em;
+        color: #757575;
+}
+.hero {
+    background-color:  #2F303A;
+}
+.title {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+}
+.hero-btn {
+    background-color: #2196F3;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
