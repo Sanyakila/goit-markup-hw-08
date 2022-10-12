@@ -107,6 +107,7 @@ body {
 
 .title-third {
     font-weight: 700;
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--primary-color);
@@ -182,6 +183,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    letter-spacing: 0.03em;
     text-align: center;
     cursor: pointer;
     color: var(--primary-color);
