@@ -1,6 +1,7 @@
 /* GENERAL STYLES */
 :root {
     --primary-color: #212121;
+    --forbackcolor: #2F303A;
     --color-secondary: #FFFFFF;
     --text-color: #757575;
     --accent-color: #2196F3;
@@ -109,7 +110,7 @@ margin-right: 18px;
 /* hero */
 
 .hero {
-    background-color: #2F303A;
+    background-color: var(--forbackcolor);
    }
 
 .title {
@@ -151,6 +152,12 @@ margin-right: 18px;
 
 /* Переваги */
 
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+}
+    
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -176,15 +183,23 @@ margin-right: 18px;
 
 .text {
     width: 270px;
+    font-size: 14px;
     line-height: 1.71;
     color: var(--text-color);
 }
 .benefits {
+    display: block;
     padding-top: 98px;
     padding-bottom: 94px;
 }
 
 /* Чим ми займаємось */
+
+.doing-pics {
+    display: flex;
+    gap: 30px;    
+}
+
 .heading {
     margin-bottom: 50px;
     min-width: 366px;
@@ -200,6 +215,14 @@ margin-right: 18px;
 
 /* team */
 
+.team-list {
+    display: flex;
+    gap: 30px;
+}
+
+.team-item {
+    flex-basis: calc((100% - 30px * 3) / 4);
+}
 .our-team {
     padding-top: 94px;
     padding-bottom: 94px; 
@@ -211,6 +234,8 @@ margin-right: 18px;
 }
 .team {
     margin-bottom: 10px;
+
+    text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -219,28 +244,42 @@ margin-right: 18px;
 
 .position {
     margin-bottom: 30px;
+
     font-size: 16px;
     line-height: 1.19;
+    text-align: center;
     color: var(--text-color);
 }
 
 /* footer */
 
+.footer-list {
+    display: block;
+    margin-top: 20px; 
+}
+
+.footer-list:not(:last-child) {
+    margin-bottom: 9px;
+
+}
+
+.footer-list-item {
+    display: inline-block;
+    margin-bottom: 9px;
+}
 
 .footer-bck {
-    background-color: #2F303A;
-    padding-top: 64px;
-    padding-bottom: 56px;
+    background-color: var(--forbackcolor);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
-.first {
-    margin-bottom: 20px;
-}
+
 .logo-footer {
     font-family: 'Raleway';
     color: var(--color-secondary)
 }
 
-.footer {
+.footer {   
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     list-style: none;
@@ -263,6 +302,9 @@ margin-right: 18px;
 /* portfolio */
 
 .desc {
+    margin-top: 20px;
+    margin-left: 24px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -271,9 +313,20 @@ margin-right: 18px;
 }
 
 .type {
+    margin-top: 4px;
+    margin-left: 24px;
+
     font-size: 16px;
     line-height: 1.88;
     color: var(--text-color);
+}
+
+/* filters list */
+
+.filters-list {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
 }
 
 .list-btn {
@@ -292,4 +345,18 @@ margin-right: 18px;
 .buttons:focus {
     background-color: var(--accent-color);
     color: var(--color-secondary)
+}
+/* projects */
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 34px;
+    padding-bottom: 94px;
+
+}
+
+.project-item {
+    flex-basis: calc((100% - 30px * 2) / 3);;
 }
