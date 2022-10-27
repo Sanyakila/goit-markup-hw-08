@@ -139,9 +139,15 @@ section {
 
 .hero {    
     padding: 200px 0;
+    margin-left: auto;
+    margin-right: auto;
     
-    text-align: center;
-    background-color: var(--forbackcolor);
+    max-width: 1600px;
+    text-align: center;    
+    background-color: var(--forbackcolor); 
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/heroback.jpg");    
+    background-repeat: no-repeat;   
+
    }
 
 .title {
@@ -209,6 +215,50 @@ section {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.undertitle-ant {
+    margin-bottom: 30px;
+
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    background-image: url("../images/antenna.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.undertitle-clock {
+    margin-bottom: 30px;
+    
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    background-image: url("../images/clock.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.undertitle-dia {
+    margin-bottom: 30px;
+    
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    background-image: url("../images/diagram.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.undertitle-astro {
+    margin-bottom: 30px;
+    
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    background-image: url("../images/astronaut.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .title-third {
@@ -290,6 +340,15 @@ section {
     line-height: 1.19;
     text-align: center;
     color: var(--text-color);
+}
+
+/*regular customers*/
+
+.title-customers {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
 }
 
 /* footer */
