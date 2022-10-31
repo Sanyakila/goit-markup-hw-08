@@ -161,10 +161,12 @@ section {
     margin-right: auto;
     
     max-width: 1600px;
+    height: 600px;
     text-align: center;    
     background-color: var(--forbackcolor); 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/heroback.jpg");    
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat; 
+    background-size: cover;  
 
    }
 
@@ -387,7 +389,7 @@ section {
     width: 170px;
     height: 92px;
 
-    border: 1px solid var(--grey-color);
+    border: 1px solid currentColor;
     border-radius: 4px;
     color: var(--grey-color);
 }
@@ -406,13 +408,9 @@ section {
 
 .container-footer {
     display: flex;
-    align-items: baseline;
-    gap: 70px;
+    align-items: baseline;    
 }
 
-.footer-box {
-    display: block;
-}
 .address-style {
     font-style: normal; 
     margin-top: 20px;
@@ -454,10 +452,7 @@ section {
 }
 
 .socials {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    max-width: 206px;
+    margin-left: 70px;    
 }
 
 .p-text {
@@ -480,7 +475,7 @@ section {
     width: 44px;
     height: 44px;
     
-    color: var(--grey-color);
+    color: var(--color-secondary);
     background-color: #FFFFFF10;
     border-radius: 50%;    
 }
@@ -569,8 +564,7 @@ section {
     box-shadow:
     0px 4px 4px rgba(0, 0, 0, 0.25),
     0px 4px 4px rgba(0, 0, 0, 0.25),
-    0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: 1px solid #EEEEEE;
+    0px 4px 4px rgba(0, 0, 0, 0.25);    
 }
 
 .project-wrapper {    
