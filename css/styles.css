@@ -197,7 +197,7 @@ section {
 
    }
 
-.title {
+.hero__title {
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -211,7 +211,7 @@ section {
     color: var(--color-secondary);
 }  
 
-.hero-btn {
+.hero__button {
     display: block;
     margin: 0 auto;
     border: none;
@@ -234,7 +234,7 @@ section {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn:active {
+.hero__button:active {
     background-color: #188CE8;
 }
 
@@ -245,17 +245,30 @@ section {
     padding-bottom: 94px;
 }
 
-.features {
+.benefits__undertitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+
+    width: 270px;
+    height: 120px;
+
+    background-color: #F5F4FA;
+}
+
+.benefits__item {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
     gap: 30px; 
 }
-.features-list{
+.benefits__list {
     flex-basis: calc((100% - 30px * 3) / 4);
 }
     
-.visually-hidden {
+.benefits__title {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -268,21 +281,7 @@ section {
     overflow: hidden;
 }
 
-.undertitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-bottom: 30px;    
-
-    width: 270px;
-    height: 120px;
-    
-    background-color: #F5F4FA;    
-}
-
-
-.title-third {
+.benefits__list__title {
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -293,7 +292,7 @@ section {
 
 }
 
-.text {
+.benefits__text {
     width: 270px;
     font-size: 14px;
     line-height: 1.71;
@@ -303,15 +302,13 @@ section {
 
 /* Чим ми займаємось */
 
-.doing-pics {
-    display: flex;
-    gap: 30px; 
-    padding-left: 0;   
+.work {
+    padding-top: 0;
 }
 
-.heading {
+.work__title {
     margin-bottom: 50px;
-    
+
     min-width: 366px;
     font-weight: 700;
     font-size: 36px;
@@ -319,11 +316,18 @@ section {
     text-align: center;
     color: var(--primary-color);
 }
-.doing {
-   padding-top: 0;
+
+.work__item {
+    display: flex;
+    gap: 30px; 
+    padding-left: 0;   
 }
 
-.doing-text {  
+.work__pics {
+    position: relative;
+}
+
+.work__text {  
     position: absolute;
     bottom: 0;
     display: flex;
@@ -342,45 +346,43 @@ section {
     background-color: rgba(47, 48, 58, 0.8);
 }
 
-.pics-before {
-    position: relative;
-
-}
-
-.pics-after {    
-    position: absolute;
-    bottom: 0;
-    
-    width: 100%;
-    height: 70px;       
-
-    background-color:rgba(47, 48, 58, 0.8);
-}
-
 /* team */
 
-.team-list {
+.team {
+    background: #F5F4FA;
+}  
+
+.team__title {
+    margin-bottom: 50px;
+    
+    min-width: 366px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    color: var(--primary-color);
+
+}
+
+.workers {
     display: flex;
     gap: 30px;
     padding-left: 0;
 }
 
-.team-item {
+.workers__list {
     flex-basis: calc((100% - 30px * 3) / 4);
     background: var(--color-secondary);    
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-.our-team {
-    padding-top: 94px;
-    padding-bottom: 94px; 
-    background: #F5F4FA;
-}
-.team-position {
+
+.workers__info {
     padding: 30px 0;
 }
 
-.team {
+.workers__list__title {
     margin-bottom: 10px;
 
     text-align: center;
@@ -390,7 +392,7 @@ section {
     color: var(--primary-color);
 }
 
-.position {
+.workers__list__position {
     margin-bottom: 16px;
 
     font-size: 16px;
@@ -399,13 +401,13 @@ section {
     color: var(--text-color);
 }
 
-.social-list {
+.workers-contacts {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-.social-link {
+.workers-contacts__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -421,19 +423,19 @@ section {
 
 }
 
-.social-link:hover,
-.social-link:focus {
+.workers-contacts__link:hover,
+.workers-contacts__link:focus {
     color: var(--color-secondary);
     background-color: var(--accent-color);
 }
 
-.social-icon {
+.workers-contacts__icon {
     fill: currentColor;
 }
 
 /*regular customers*/
 
-.title-clients {
+.customers__title {
     margin-bottom: 50px;
 
     font-weight: 700;
@@ -442,14 +444,14 @@ section {
     text-align: center;
 }
 
-.clients-list {
+.customers__item {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
 
-.clients-link {
+.customers__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -463,12 +465,12 @@ section {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);        
 }
 
-.clients-link:hover,
-.clients-link:focus {    
+.customers__link:hover,
+.customers__link:focus {    
     color: var(--accent-color);
 }
 
-.clients-icon {
+.customers__icon {
     fill: currentColor;
 }
 
@@ -566,6 +568,10 @@ section {
 .footer-social-link:focus {
     color: var(--color-secondary);
     background-color: var(--accent-color);
+}
+
+.social-icon {
+    fill: currentColor;
 }
 
 .joinus {    
