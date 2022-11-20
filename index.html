@@ -12,29 +12,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
-    <header class="style">
-        <div class="container main-nav">
-            <a class="logo-link" href="/index.html">Web<span class="logo-header">Studio</span></a>
-            <nav class="nav-style">
-                <ul class="nav-list list">
-                    <li class="nav-li"><a href="./index.html" class="nav-link link current">Студія</a></li>
-                    <li class="nav-li"><a href="./portfolio.html" class="nav-link link">Портфоліо</a></li>
-                    <li class="nav-li"><a href="./index.html" class="nav-link link">Контакти</a></li>
+    <header class="header">
+        <div class="header__block container">
+            <a class="header-logo" href="/index.html">Web<span class="header-logo__color">Studio</span></a>
+            <nav class="header-nav">
+                <ul class="header-nav__item list">
+                    <li class="header-nav__list"><a href="./index.html" class="header-nav__link link current">Студія</a></li>
+                    <li class="header-nav__list"><a href="./portfolio.html" class="header-nav__link link">Портфоліо</a></li>
+                    <li class="header-nav__list"><a href="./index.html" class="header-nav__link link">Контакти</a></li>
                 </ul>
             </nav>
             <div class="header-contacts">
-                <a class="header-tel-link link" href="mailto:info@devstudio.com">
-                    <svg class="contacts-icon" width="16" height="12">
+                <a class="header-contacts__info link" href="mailto:info@devstudio.com">
+                    <svg class="header-contacts__icon" width="16" height="12">
                         <use href="./images/icons.svg#envelope"></use>
                     </svg>
                     info@devstudio.com
                 </a>
-                <a class="header-tel-link link" href="tel:+380961111111">
-                    <svg class="contacts-icon" width="10" height="16">
+                <a class="header-contacts__info link" href="tel:+380961111111">
+                    <svg class="header-contacts__icon" width="10" height="16">
                         <use href="./images/icons.svg#smartphone"></use>
                     </svg>
                     +38 096 111 11 11
@@ -60,7 +61,7 @@
                                 <use href="./images/icons.svg#antenna"></use>
                             </svg>
                         </div>
-                        <h3 class="benefits__list__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                        <h3 class="benefits__list-title">УВАГА ДО ДЕТАЛЕЙ</h3>
                         <p class="benefits__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
                         </p>
                     </li>
@@ -70,7 +71,7 @@
                                 <use href="./images/icons.svg#clock"></use>
                             </svg>
                         </div>
-                        <h3 class="benefits__list__title">ПУНКТУАЛЬНІСТЬ</h3>
+                        <h3 class="benefits__list-title">ПУНКТУАЛЬНІСТЬ</h3>
                         <p class="benefits__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                     </li>
                     <li class="benefits__list">
@@ -79,7 +80,7 @@
                                 <use href="./images/icons.svg#diagram"></use>
                             </svg>
                         </div>
-                        <h3 class="benefits__list__title">ПЛАНУВАННЯ</h3>
+                        <h3 class="benefits__list-title">ПЛАНУВАННЯ</h3>
                         <p class="benefits__text">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
                     <li class="benefits__list">
@@ -88,7 +89,7 @@
                                 <use href="./images/icons.svg#astronaut"></use>
                             </svg>
                         </div>
-                        <h3 class="benefits__list__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                        <h3 class="benefits__list-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                         <p class="benefits__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.
                         </p>
                     </li>
@@ -127,8 +128,8 @@
                     <li class="workers__list">
                         <img src="./images/Ihor.jpg" alt="Ігор" width="270">
                         <div class="workers__info">
-                            <h3 class="workers__list__title">Ігор Дем'яненко</h3>
-                            <p class="workers__list__position">Product Designer</p>
+                            <h3 class="workers__list-title">Ігор Дем'яненко</h3>
+                            <p class="workers__list-position">Product Designer</p>
                             <ul class="workers-contacts list">
                                 <li class="workers-contacts__item">
                                     <a class="workers-contacts__link link" href="https://instagram.com" target="_blank"
@@ -168,8 +169,8 @@
                     <li class="workers__list">
                         <img src="./images/Olha.jpg" alt="Ольга" width="270">
                         <div class="workers__info">
-                            <h3 class="workers__list__title">Ольга Рєпіна</h3>
-                            <p class="workers__list__position">Frontend Developer</p>
+                            <h3 class="workers__list-title">Ольга Рєпіна</h3>
+                            <p class="workers__list-position">Frontend Developer</p>
                             <ul class="workers-contacts list">
                                 <li class="workers-contacts__item">
                                     <a class="workers-contacts__link link" href="https://instagram.com" target="_blank"
@@ -209,8 +210,8 @@
                     <li class="workers__list">
                         <img src="./images/Mykola.jpg" alt="Микола" width="270">
                         <div class="workers__info">
-                            <h3 class="workers__list__title">Микола Тарасов</h3>
-                            <p class="workers__list__position">Marketing</p>
+                            <h3 class="workers__list-title">Микола Тарасов</h3>
+                            <p class="workers__list-position">Marketing</p>
                             <ul class="workers-contacts list">
                                 <li class="workers-contacts__item">
                                     <a class="workers-contacts__link link" href="https://instagram.com" target="_blank"
@@ -250,8 +251,8 @@
                     <li class="workers__list">
                         <img src="./images/Myhailo.jpg" alt="Михайло" width="270">
                         <div class="workers__info">
-                            <h3 class="workers__list__title">Михайло Єрмаков</h3>
-                            <p class="workers__list__position">UI Designer</p>
+                            <h3 class="workers__list-title">Михайло Єрмаков</h3>
+                            <p class="workers__list-position">UI Designer</p>
                             <ul class="workers-contacts list">
                                 <li class="workers-contacts__item">
                                     <a class="workers-contacts__link link" href="https://instagram.com" target="_blank"
@@ -344,7 +345,7 @@
     <footer class="footer-bck">
         <div class="container container-footer">
             <div class="footer-box">
-                <a class="logo-link" href="./index.html">Web<span class="logo-footer">Studio</span></a>
+                <a class="footer-logo" href="./index.html">Web<span class="logo-footer">Studio</span></a>
                 <address class="address-style">
                     <ul class="list">
                         <li class="address-list">
@@ -362,8 +363,8 @@
             </div>
             <div class="socials">
                 <p class="p-text">приєднуйтесь</p>
-                <ul class="workers-contacts list">
-                    <li class="workers-contacts__item">
+                <ul class="socials-contacts list">
+                    <li class="socials-contacts__item">
                         <a class="footer-social-link link" href="https://instagram.com" target="_blank"
                             rel="nofollow noopener noreferrer" aria-label="instagram-icon">
                             <svg class="social-icon" width="20" height="20">
@@ -371,7 +372,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="workers-contacts__item">
+                    <li class="socials-contacts__item">
                         <a class="footer-social-link link" href="https://https://twitter.com" target="_blank"
                             rel="nofollow noopener noreferrer" aria-label="twitter-icon">
                             <svg class="social-icon" width="20" height="20">
@@ -379,7 +380,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="workers-contacts__item">
+                    <li class="socials-contacts__item">
                         <a class="footer-social-link link" href="https://facebook.com" target="_blank"
                             rel="nofollow noopener noreferrer" aria-label="facebook-icon">
                             <svg class="social-icon" width="20" height="20">
@@ -387,7 +388,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="workers-contacts__item">
+                    <li class="socials-contacts__item">
                         <a class="footer-social-link link" href="https://linkedin.com" target="_blank"
                             rel="nofollow noopener noreferrer" aria-label="linkedin-icon">
                             <svg class="social-icon" width="20" height="20">
