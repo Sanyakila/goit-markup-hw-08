@@ -1,5 +1,19 @@
-.container {
-    width: 1200px;
+.container {    
     padding: 0 15px;
     margin: 0 auto;
+
+    // mobile screen
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    }
+
+    // tablet screen
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
+    // desktop screen
+        @media screen and (min-width: $desktop) {
+            width: $desktop;
+        }           
 }
+
