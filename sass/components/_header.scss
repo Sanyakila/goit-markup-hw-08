@@ -8,7 +8,12 @@
 }
 
 .header-nav {
-    margin-left: 93px;
+    display: none;
+    
+    @media screen and (min-width: $tablet) {
+        display: block;
+        margin-left: 93px;
+    }
 }
 
 .header-nav__item {
@@ -60,11 +65,16 @@
 }
 
 .header-contacts {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin-left: auto;
+    display: none;
+    
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        margin-left: auto;
+        
+    }
 }
 
 .header-contacts__info:not(:last-child) {
