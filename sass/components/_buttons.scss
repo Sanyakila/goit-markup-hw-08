@@ -45,6 +45,9 @@
     &:active {
     background-color: #188CE8;
     }
+    @media screen and(max-width: 1199px) {
+        margin: 0 auto;
+    }
 }
 
 .close-btn {

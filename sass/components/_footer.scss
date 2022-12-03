@@ -5,24 +5,44 @@
 }
 
 .container-footer {
-    display: flex;
-    align-items: baseline;
+    text-align: center;
+
+    @media screen and(min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        justify-content: space-around;
+    }
+    
+    @media screen and(min-width: $desktop) {
+        display: flex;
+        align-items: baseline;
+    }    
 }
 
 .address-style {
     font-style: normal;
-    margin-top: 20px;
+    margin-top: 28px;
+
+    @media screen and(min-width: $desktop) {
+       margin-top: 20px;
+    }
 }
 
 .address-list:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 12px;
+
+    @media screen and(min-width: $desktop) {
+        margin-bottom: 9px;
+    }
 }
 
 .footer {
-    font-size: 14px;
     list-style: none;
     text-decoration: none;
+    font-size: 14px;
     line-height: 1.71;
+
     color: var(--color-secondary);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -36,11 +56,11 @@
     display: block;
 
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-size: 14px;
+    font-style: normal;    
     list-style: none;
     text-decoration: none;
     font-weight: 400;
+    font-size: 14px;
     line-height: 1.71;
     color: #FFFFFF99;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -53,7 +73,13 @@
 }
 
 .socials {
-    margin-left: 70px;
+    @media screen and(max-width: 767px) {
+        margin-top: 60px;
+    }   
+    
+    @media screen and(min-width: $desktop) {
+        margin-left: 70px;
+    }    
 }
 
 .p-text {
@@ -63,8 +89,9 @@
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     text-transform: uppercase;
+
     color: var(--color-secondary);
 }
 
@@ -73,13 +100,25 @@
 }
 
 .joinus {
-    margin-left: auto;
+    @media screen and (max-width: 767px) {
+        margin-top: 60px;
+    }
+    
+    @media screen and(min-width: $tablet) {
+        display: inline-block;        
+    }
+    @media screen and(min-width: $desktop) {
+        margin-left: auto;
+    }    
 }
 
 .joinus-form {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
+
+    @media screen and(min-width: $desktop) {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }    
 }
 
 .joinus-text {
@@ -92,10 +131,14 @@
     text-transform: uppercase;
 
     color: var(--color-secondary);
+
+    @media screen and(max-width: 1199px) {
+        margin-bottom: 20px;
+    }
 }
 
 .joinus-input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     padding: 15px;
 
@@ -105,6 +148,13 @@
 
     color: var(--color-secondary);
     background-color: #2F303A;
+
+    @media screen and(min-width: $desktop) {
+        width: 358px;
+    }
+    @media screen and(max-width: 1199px) {
+        margin-bottom: 20px;
+    }
 }
 
 .joinus-icon {
