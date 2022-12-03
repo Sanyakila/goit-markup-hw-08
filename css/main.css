@@ -1220,7 +1220,7 @@ section {
   outline: none;
 }
 .menu-toggle:hover, .menu-toggle:focus {
-  color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
   .menu-toggle {
@@ -1244,8 +1244,8 @@ section {
   position: fixed;
   top: 0;
   left: 0;
-  width: 480px;
-  height: 796px;
+  width: 100vw;
+  height: 100vw;
   padding: 32px;
   background-color: var(--color-secondary);
   z-index: 999;
@@ -1255,11 +1255,6 @@ section {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media (min-width: 768px) {
-  .menu-container {
-    display: none;
-  }
 }
 
 .menu-container.is-open {
@@ -1315,7 +1310,6 @@ section {
 
 .tel {
   display: inline-block;
-  margin-bottom: 32px;
   font-size: 34px;
   line-height: 1.18;
   color: var(--accent-color);
