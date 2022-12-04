@@ -26,8 +26,8 @@
     }
 }
 
-.customers__list {
-    min-width: 210px;
+.customers__list {   
+    flex-basis: calc((100% - 30px) / 2);
     text-align: center;
 
     @media screen and(min-width: $tablet) {

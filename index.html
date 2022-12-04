@@ -19,12 +19,7 @@
 <body>
     <header class="header">
         <div class="header__block container">
-            <a class="header-logo" href="/index.html">Web<span class="header-logo__color">Studio</span></a>
-            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                <svg class="menu-icon" width="40" height="40">
-                    <use href="./images/icons.svg#menu"></use>
-                </svg>
-            </button>            
+            <a class="header-logo" href="/index.html">Web<span class="header-logo__color">Studio</span></a>                 
             <nav class="header-nav">
                 <ul class="header-nav__item list">
                     <li class="header-nav__list"><a href="./index.html" class="header-nav__link link current">Студія</a></li>
@@ -46,6 +41,11 @@
                     +38 096 111 11 11
                 </a>
             </div>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="menu-icon" width="40" height="40">
+                    <use href="./images/icons.svg#menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <main>
@@ -104,37 +104,51 @@
                 </ul>
             </div>
         </section>
-        <!-- <section class="work">
+        <section class="work">
             <div class="container">
                 <h2 class="work__title">Чим ми займаємося</h2>
                 <ul class="work__item list">
                     <li>
                         <div class="work__pics">
-                            <img src="./images/1.jpg" alt="розробляємо" width="370">
+                            <img
+                            srcset="./images/work/img@1x.jpg 1x, ./images/work/img@2x.jpg 2x"     
+                            src="./images/1.jpg" alt="розробляємо" width="370">
                             <p class="work__text">Десктопні додатки</p>
                         </div>
                     </li>
                     <li>
                         <div class="work__pics">
-                            <img src="./images/2.jpg" alt="тестуємо" width="370">
+                            <img 
+                            srcset="./images/work/img@1x-1.jpg 1x, ./images/work/img@2x-1.jpg 2x"
+                            src="./images/2.jpg" alt="тестуємо" width="370">
                             <p class="work__text">Мобільні додатки</p>
                         </div>
                     </li>
                     <li>
                         <div class="work__pics">
-                            <img src="./images/3.jpg" alt="робимо дизайн" width="370">
+                            <img
+                            srcset="./images/work/img@1x-2.jpg 1x, ./images/work/img@2x-2.jpg 2x"
+                            src="./images/3.jpg" alt="робимо дизайн" width="370">
                             <p class="work__text">Дизайнерські рішення</p>
                         </div>
                     </li>
                 </ul>
             </div>
-        </section> -->
-        <!-- <section class="team section">
+        </section>
+        <section class="team section">
             <div class="container">
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="workers list">
                     <li class="workers__list">
-                        <img src="./images/Ihor.jpg" alt="Ігор" width="270">
+                        <picture>
+                            <source srcset="./images/team/imglg1x.jpg 1x, ./images/team/imglg2x.jpg.jpg 2x"
+                                media="(min-width: 1200px)" type="image/jpeg" />
+                            <source srcset="./images/team/imgmd1x.jpg 1x, ./images/team/imgmd2x.jpg.jpg 2x"
+                                media="(min-width: 768px)" type="image/jpeg" />
+                            <source srcset="./images/team/imgsm1x.jpg 1x, ./images/team/imgsm2x.jpg.jpg 2x"
+                                media="(max-width: 767px)" type="image/jpeg" />
+                            <img src="./images/Ihor.jpg" alt="Ігор Дем'яненко" />
+                        </picture>
                         <div class="workers__info">
                             <h3 class="workers__list-title">Ігор Дем'яненко</h3>
                             <p class="workers__list-position">Product Designer</p>
@@ -175,7 +189,15 @@
                         </div>
                     </li>
                     <li class="workers__list">
-                        <img src="./images/Olha.jpg" alt="Ольга" width="270">
+                        <picture>
+                            <source srcset="./images/team/imglg1x-1.jpg 1x, ./images/team/imglg2x-1.jpg.jpg 2x"
+                                media="(min-width: 1200px)" type="image/jpeg" />
+                            <source srcset="./images/team/imgmd1x-1.jpg 1x, ./images/team/imgmd2x-1.jpg.jpg 2x"
+                                media="(min-width: 768px)" type="image/jpeg" />
+                            <source srcset="./images/team/imgsm1x-1.jpg 1x, ./images/team/imgsm2x-1.jpg.jpg 2x"
+                                media="(max-width: 767px)" type="image/jpeg" />
+                            <img src="./images/Olha.jpg" alt="Ольга Рєпіна" />
+                        </picture>
                         <div class="workers__info">
                             <h3 class="workers__list-title">Ольга Рєпіна</h3>
                             <p class="workers__list-position">Frontend Developer</p>
@@ -216,7 +238,15 @@
                         </div>
                     </li>
                     <li class="workers__list">
-                        <img src="./images/Mykola.jpg" alt="Микола" width="270">
+                        <picture>
+                            <source srcset="./images/team/imglg1x-2.jpg 1x, ./images/team/imglg2x-2.jpg.jpg 2x"
+                                media="(min-width: 1200px)" type="image/jpeg" />
+                            <source srcset="./images/team/imgmd1x-2.jpg 1x, ./images/team/imgmd2x-2.jpg.jpg 2x"
+                                media="(min-width: 768px)" type="image/jpeg" />
+                            <source srcset="./images/team/imgsm1x-2.jpg 1x, ./images/team/imgsm2x-2.jpg.jpg 2x"
+                                media="(max-width: 767px)" type="image/jpeg" />
+                            <img src="./images/Mykola.jpg" alt="Микола Тарасов" />
+                        </picture>
                         <div class="workers__info">
                             <h3 class="workers__list-title">Микола Тарасов</h3>
                             <p class="workers__list-position">Marketing</p>
@@ -257,7 +287,15 @@
                         </div>
                     </li>
                     <li class="workers__list">
-                        <img src="./images/Myhailo.jpg" alt="Михайло" width="270">
+                        <picture>
+                            <source srcset="./images/team/imglg1x-3.jpg 1x, ./images/team/imglg2x-3.jpg.jpg 2x"
+                                media="(min-width: 1200px)" type="image/jpeg" />
+                            <source srcset="./images/team/imgmd1x-3.jpg 1x, ./images/team/imgmd2x-3.jpg.jpg 2x"
+                                media="(min-width: 768px)" type="image/jpeg" />
+                            <source srcset="./images/team/imgsm1x-3.jpg 1x, ./images/team/imgsm2x-3.jpg.jpg 2x"
+                                media="(max-width: 767px)" type="image/jpeg" />
+                            <img src="./images/Myhailo.jpg" alt="Михайло Єрмаков" />
+                        </picture>
                         <div class="workers__info">
                             <h3 class="workers__list-title">Михайло Єрмаков</h3>
                             <p class="workers__list-position">UI Designer</p>
@@ -299,7 +337,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <section class="customers section">
             <div class="container">
                 <h2 class="customers__title">Постійні клієнти</h2>
@@ -464,7 +502,7 @@
     </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
-            <svg class="menu-icon" width="40" height="40">
+            <svg class="" width="40" height="40">
               <use href="./images/icons.svg#close-menu"></use>
             </svg>
         </button> 
@@ -503,9 +541,7 @@
         </ul>
     </div>    
     <script src="./js/modal.js"></script>
-    <script
-        defer
-        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
     <script defer src="./js/mobile-menu.js"></script>
