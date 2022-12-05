@@ -1049,7 +1049,6 @@ section {
 @media screen and (min-width: 450px) and (max-width: 767px) {
   .backdrop {
     position: absolute;
-    padding-top: 93px;
   }
 }
 
@@ -1437,7 +1436,6 @@ section {
 
 .mail {
   display: inline-block;
-  margin-bottom: 64px;
   font-size: 24px;
   line-height: 1.17;
 }
