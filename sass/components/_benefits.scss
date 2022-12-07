@@ -52,6 +52,11 @@
         flex-basis: calc((100% - 30px * 3) / 4);
     }
 }
+    @media screen and(max-width: 767px) {
+        .benefits__list:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
 
 .benefits__list-title {
     margin-bottom: 10px;
