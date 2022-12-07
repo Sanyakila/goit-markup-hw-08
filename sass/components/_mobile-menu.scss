@@ -38,6 +38,7 @@
   width: 100vw;
   height: 100vh;
   padding: 32px;
+
   background-color: var(--color-secondary);
   z-index: 999;
 
@@ -77,7 +78,7 @@
 .mobile-nav__link {
   position: relative;
   box-sizing: border-box;
-  display: inline-block;
+  display: block;
   text-decoration: none;
 
   color: var(--primary-color);
@@ -105,7 +106,7 @@
 }
 
 .tel {
-  display: inline-block;  
+  display: block;  
 
   font-size: 34px;
   line-height: 1.18;
@@ -114,7 +115,7 @@
 }
 
 .mail {
-  display: inline-block;
+  display: block;
   // margin-bottom: 64px;
 
   font-size: 24px;
