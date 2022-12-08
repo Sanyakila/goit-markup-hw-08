@@ -111,6 +111,9 @@
 }
 
 .header-contacts__info:not(:last-child) {
+    @media screen and(min-width: $tablet) {
+        margin-bottom: 10px;
+    }
     @media screen and(min-width: $desktop) {
         margin-right: 50px;
     }
