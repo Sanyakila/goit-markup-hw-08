@@ -16,12 +16,23 @@
 
 .filters-list {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;    
     gap: 8px;
+    
+    @media screen and(max-width: 767px) {
+        flex-wrap: wrap;
+        align-content: stretch;
+    }
+
+    @media screen and(min-width: $tablet) {
+        justify-content: center;
+    }
 }
 
 .portfolio-styles {
-    padding: 94px 0;
+    @media screen and(min-width: $desktop) {
+        padding: 94px 0;
+    }    
 }
 
 .portfolio-title {
@@ -46,7 +57,13 @@
 }
 
 .project-item {
-    flex-basis: calc((100% - 30px * 2) / 3);
+    @media screen and(min-width: $tablet) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+    @media screen and(min-width: $desktop) {
+        flex-basis: calc((100% - 30px * 2) / 3);
+    }
+    
 }
 
 .project-link {
