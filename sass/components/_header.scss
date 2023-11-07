@@ -75,16 +75,18 @@
 .header-contacts {
     display: none;
 
-    @media screen and(min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
         display: flex;
         flex-wrap: wrap;
         margin-left: auto;
         align-items: center;        
     }
     
-    @media screen and (min-width: $desktop) {      
+    @media screen and (min-width: $desktop) {   
+        display: flex;
         justify-content: center;
-        flex-wrap: nowrap;        
+        flex-wrap: nowrap;
+        align-items: baseline;
         
     }
 }
