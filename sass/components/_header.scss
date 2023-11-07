@@ -5,7 +5,7 @@
 .header__block {
     display: flex;
     align-items: center;
-    @media screen and(max-width: 767px) {
+    @media screen and (max-width: 767px) {
         height: 60px;
     }
 }
@@ -13,7 +13,7 @@
 .header-nav {
     display: none;
 
-    @media screen and(min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
         display: block;
         margin-left: 88px;
         margin-right: 75px;
@@ -113,10 +113,10 @@
 }
 
 .header-contacts__info:not(:last-child) {
-    @media screen and(min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
         margin-bottom: 10px;
     }
-    @media screen and(min-width: $desktop) {
+    @media screen and (min-width: $desktop) {
         margin-right: 50px;
     }
 }

@@ -6,10 +6,10 @@
     line-height: 1.17;
     text-align: center;
 
-    @media screen and(min-width: $desktop) {
+    @media screen and (min-width: $desktop) {
         font-size: 36px;
     }
-    @media screen and(min-width: $desktop) {
+    @media screen and (min-width: $desktop) {
         margin-bottom: 50px;
     }
 }
@@ -21,7 +21,7 @@
     align-items: center;
     gap: 30px;
 
-    @media screen and(min-width: $desktop) {
+    @media screen and (min-width: $desktop) {
         flex-wrap: nowrap;
     }
 }
@@ -30,11 +30,11 @@
     flex-basis: calc((100% - 30px) / 2);
     text-align: center;
 
-    @media screen and(min-width: $tablet) and(max-width: 1199px) {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
         min-width: 226px;
         flex-basis: calc((100% - 30px * 2) / 3);
     }
-        @media screen and(min-width: $desktop) {
+        @media screen and (min-width: $desktop) {
             min-width: 170px;
         }
 }

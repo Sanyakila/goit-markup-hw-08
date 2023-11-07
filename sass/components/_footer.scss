@@ -5,18 +5,18 @@
 }
 
 .container-footer {
-    @media screen and(max-width: 1199px) {
+    @media screen and (max-width: 1199px) {
         text-align: center;
     }   
 
-    @media screen and(min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
         display: flex;
         flex-wrap: wrap;
         gap: 60px;
         justify-content: space-around;
     }
     
-    @media screen and(min-width: $desktop) {
+    @media screen and (min-width: $desktop) {
         display: flex;
         align-items: baseline;
     }    
@@ -26,7 +26,7 @@
     font-style: normal;
     margin-top: 28px;
 
-    @media screen and(min-width: $desktop) {
+    @media screen and (min-width: $desktop) {
        margin-top: 20px;
     }
 }
@@ -34,7 +34,7 @@
 .address-list:not(:last-child) {
     margin-bottom: 12px;
 
-    @media screen and(min-width: $desktop) {
+    @media screen and (min-width: $desktop) {
         margin-bottom: 9px;
     }
 }
@@ -75,11 +75,11 @@
 }
 
 .socials {
-    @media screen and(max-width: 767px) {
+    @media screen and (max-width: 767px) {
         margin-top: 60px;
     }   
     
-    @media screen and(min-width: $desktop) {
+    @media screen and (min-width: $desktop) {
         margin-left: 70px;
     }    
 }
@@ -106,17 +106,17 @@
         margin-top: 60px;
     }
     
-    @media screen and(min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
         display: inline-block;        
     }
-    @media screen and(min-width: $desktop) {
+    @media screen and (min-width: $desktop) {
         margin-left: auto;
     }    
 }
 
 .joinus-form {
 
-    @media screen and(min-width: $desktop) {
+    @media screen and (min-width: $desktop) {
         display: flex;
         align-items: center;
         margin-top: 20px;
@@ -134,7 +134,7 @@
 
     color: var(--color-secondary);
 
-    @media screen and(max-width: 1199px) {
+    @media screen and (max-width: 1199px) {
         margin-bottom: 20px;
     }
 }
@@ -151,14 +151,14 @@
     color: var(--color-secondary);
     background-color: #2F303A;
 
-    @media screen and(min-width: $tablet) {
+    @media screen and (min-width: $tablet) {
         width: 450px;
     }
 
-    @media screen and(min-width: $desktop) {
+    @media screen and (min-width: $desktop) {
         width: 358px;
     }
-    @media screen and(max-width: 1199px) {
+    @media screen and (max-width: 1199px) {
         margin-bottom: 20px;
     }
 }

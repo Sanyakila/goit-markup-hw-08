@@ -31,7 +31,7 @@
     }
 
     //tablet screen 
-    @media screen and(min-width: 481px) {
+    @media screen and (min-width: 481px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url("../images/hero/HeaderimgMH1_result.jpg");
         background-repeat: no-repeat;
@@ -52,7 +52,7 @@
     }
 
     //desktop screen 
-    @media screen and(min-width: 769px) {
+    @media screen and (min-width: 769px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url("../images/hero/ImgLH1_result.jpg");
         background-repeat: no-repeat;
@@ -72,7 +72,7 @@
         }
     }   
 
-    @media screen and(min-width: $desktop) {
+    @media screen and (min-width: $desktop) {
         // max-width: 1600px;
         height: 600px;
     }
@@ -92,7 +92,7 @@
 
     color: var(--color-secondary);
 
-    @media screen and(min-width: $desktop) {
+    @media screen and (min-width: $desktop) {
         max-width: 696px;
         font-size: 44px;
     }
